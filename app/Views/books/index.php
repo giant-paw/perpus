@@ -83,8 +83,8 @@
                 </a>
               </td>
 
-               <!-- No Panggil -->
-               <td><?= $book['no_panggil']; ?></td>
+              <!-- Nomor Panggil -->
+              <td><?= $book['no_panggil']; ?></td>
 
               <td>
                 <!-- Judul -->
@@ -97,7 +97,7 @@
               <!-- Kategori -->
               <td><?= $book['category']; ?></td>
 
-              <!-- No Klasifikasi -->
+              <!-- Tampil Nomor Klasifikasi -->
               <td><?= $book['no_klasifikasi']; ?></td>
               
               <!-- Rak -->

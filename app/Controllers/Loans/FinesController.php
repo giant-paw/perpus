@@ -45,6 +45,8 @@ class FinesController extends ResourceController
                 ->join('fines', 'fines.loan_id = loans.id', 'INNER')
                 ->like('first_name', $keyword, insensitiveSearch: true)
                 ->orLike('last_name', $keyword, insensitiveSearch: true)
+                ->orLike('no_panggil', $keyword, insensitiveSearch: true)
+                ->orLike('no_klasifikasi', $keyword, insensitiveSearch: true)
                 ->orLike('email', $keyword, insensitiveSearch: true)
                 ->orLike('title', $keyword, insensitiveSearch: true)
                 ->orLike('slug', $keyword, insensitiveSearch: true)

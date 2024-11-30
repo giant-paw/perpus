@@ -45,7 +45,7 @@
       <table class="table table-hover table-striped">
         <thead class="table-light">
           <tr>
-            <th scope="col">Member ID</th>
+            <th scope="col">ID Anggota</th>
             <th scope="col">Nama lengkap</th>
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
@@ -80,12 +80,13 @@
               <td>
                 <div class="d-flex justify-content-center gap-2">
                   <a href="<?= base_url("admin/members/{$member['uid']}/edit"); ?>" class="btn btn-primary mb-2">
+                  
                     Edit
                   </a>
                   <form action="<?= base_url("admin/members/{$member['uid']}"); ?>" method="post">
                     <?= csrf_field(); ?>
                     <input type="hidden" name="_method" value="DELETE">
-                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');" style="background-color: red;">
                       Delete
                     </button>
                   </form>

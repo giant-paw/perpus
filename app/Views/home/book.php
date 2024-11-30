@@ -45,7 +45,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top;
-            height: 250px;
+            height: 170px;
           }
         </style>
         <div class="col-sm-6 col-xl-3">
@@ -56,10 +56,14 @@
                 </div>
               </a>
             </div>
-            <div class="card-body pt-3 p-4">
+            <div class="card-body pt-3 ">
               <h6 class="fw-semibold fs-4">
                 <?= substr($book['title'], 0, 64) . ((strlen($book['title']) > 64) ? '...'  : '') . " ({$book['year']})"; ?>
-              </h6>
+              </h1>
+
+              <p style="margin-bottom: 6px; margin-top: 14px;">Pengarang: <?= $book['author']; ?></p>
+              <p style="margin-bottom: 6px;">Nomor Klasifikasi: <?= $book['no_klasifikasi']; ?></p>
+              <p>Nomor Panggil: <?= $book['no_panggil']; ?></p>
             </div>
           </div>
         </div>

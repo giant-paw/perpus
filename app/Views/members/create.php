@@ -28,9 +28,9 @@
       
       <div class="col-12 col-md-6 mb-3">
           <label for="member_id" class="form-label">Member ID</label>
-          <input type="text" class="form-control <?php if ($validation->hasError('member_id')) : ?>is-invalid<?php endif ?>" id="member_id" name="member_id" value="<?= $oldInput['member_id'] ?? ''; ?>" placeholder="xxxxx" required>
+          <input type="text" class="form-control <?php if ($validation->hasError('id_anggota')) : ?>is-invalid<?php endif ?>" id="id_anggota" name="id_anggota" value="<?= $oldInput['id_anggota'] ?? ''; ?>" placeholder="xxxxx" required>
           <div class="invalid-feedback">
-            <?= $validation->getError('member_id'); ?>
+            <?= $validation->getError('id_anggota'); ?>
           </div>
         </div>
 

@@ -15,7 +15,7 @@
       <div class="col-12 col-lg-6">
         <h5 class="card-title fw-semibold mb-4">Pilih Buku</h5>
         <div class="mb-4">
-          <label for="search" class="form-label">Cari Judul, pengarang atau penerbit buku</label>
+          <label for="search" class="form-label">Cari Judul, No. Klasifikasi, No. Panggil, Pengarang atau Penerbit Buku</label>
           <input type="text" class="form-control" id="search" name="search" placeholder="Cari buku">
           <div class="invalid-feedback">
           </div>

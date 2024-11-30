@@ -26,6 +26,15 @@
       <?= csrf_field(); ?>
       <input type="hidden" name="_method" value="PUT">
       <div class="row mt-3">
+
+        <div class="col-12 col-md-6 mb-3">
+          <label for="id_anggota" class="form-label">ID Anggota</label>
+          <input type="text" class="form-control <?php if ($validation->hasError('id_anggota')) : ?>is-invalid<?php endif ?>" id="id_anggota" name="id_anggota" value="<?= $oldInput['id_anggota'] ?? $member['id_anggota'] ?? $member['id_anggota'] ?? ''; ?>">
+          <div class="invalid-feedback">
+            <?= $validation->getError('id_anggota'); ?>
+          </div>
+        </div>
+
         <div class="col-12 col-md-6 mb-3">
           <label for="first_name" class="form-label">Nama depan</label>
           <input type="text" class="form-control <?php if ($validation->hasError('first_name')) : ?>is-invalid<?php endif ?>" id="first_name" name="first_name" value="<?= $oldInput['first_name'] ?? $member['first_name'] ?? ''; ?>" placeholder="John Doe" required>
@@ -33,6 +42,7 @@
             <?= $validation->getError('first_name'); ?>
           </div>
         </div>
+
         <div class="col-12 col-md-6 mb-3">
           <label for="last_name" class="form-label">Nama belakang</label>
           <input type="text" class="form-control <?php if ($validation->hasError('last_name')) : ?>is-invalid<?php endif ?>" id="last_name" name="last_name" value="<?= $oldInput['last_name'] ?? $member['last_name'] ?? ''; ?>">

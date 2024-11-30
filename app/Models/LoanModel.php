@@ -20,6 +20,7 @@ class LoanModel extends Model
         'uid',
         'id_anggota',
         'no_panggil',
+        'no_klasifikasi',
         'loan_date',
         'due_date',
         'return_date',

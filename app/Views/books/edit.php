@@ -59,6 +59,15 @@
             </div>
           </div>
 
+          <!-- EDIT NOMOR Klasifikasi -->
+          <div class="mb-3">
+            <label for="no_klasifikasi" class="form-label">Nomor Klasifikasi</label>
+            <input type="text" class="form-control <?php if ($validation->hasError('no_klasifikasi')) : ?>is-invalid<?php endif ?>" id="no_klasifikasi" name="no_klasifikasi" value="<?= $oldInput['no_klasifikasi'] ?? $book['no_klasifikasi']; ?>" required>
+            <div class="invalid-feedback">
+              <?= $validation->getError('no_panggil'); ?>
+            </div>
+          </div>
+          
           <!-- EDIT NOMOR PANGGIL -->
           <div class="mb-3">
             <label for="no_panggil" class="form-label">Nomor Panggil</label>

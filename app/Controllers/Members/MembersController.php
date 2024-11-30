@@ -325,7 +325,7 @@ class MembersController extends ResourceController
         if (!$this->memberModel->save([
             'id'            => $member['id'],
             'uid'           => $uid,
-            'id_anggota'    => $this->request->getVar('member_id'),
+            'id_anggota'    => $this->request->getVar('id_anggota'),
             'first_name'    => $this->request->getVar('first_name'),
             'last_name'     => $this->request->getVar('last_name'),
             'email'         => $this->request->getVar('email'),

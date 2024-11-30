@@ -32,6 +32,8 @@ class Home extends BaseController
                 ->like('title', $keyword, insensitiveSearch: true)
                 ->orLike('slug', $keyword, insensitiveSearch: true)
                 ->orLike('author', $keyword, insensitiveSearch: true)
+                ->orLike('no_panggil', $keyword, insensitiveSearch: true)
+                ->orLike('no_klasifikasi', $keyword, insensitiveSearch: true)
                 ->orLike('publisher', $keyword, insensitiveSearch: true)
                 ->paginate($itemPerPage, 'books');
 
